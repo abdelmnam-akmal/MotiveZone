@@ -1,0 +1,58 @@
+.work-us {
+    margin-bottom: 114px;
+    .work-image {
+        margin-right: 185px;
+        > div {
+            margin-left: 88px;
+        }
+    }
+    .work-cont {
+        .special-header {
+            margin-bottom: 29.5px;
+        }
+        p {
+            font-size: 15px;
+            color: $flatblack3;
+            line-height: 26px;
+            &:last-of-type {
+                margin-bottom: 53px;
+            }
+        }
+        .skills-options {
+            .work-select {
+                width: 70%;
+                border: none;
+                outline: none;
+            }
+            .select2-container {
+                box-shadow: 6px 0px 30px $flatEEE;
+                border: 2px solid $flatFFF;
+                padding: 5px;
+                position: relative;
+                .select2-selection {
+                    border: none;
+                    .select2-search__field {
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                .icon-select {
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    margin-top: -15px;
+                    background-color: $defaultBtnColor;
+                    width: 30px;
+                    height: 30px;
+                    @extend %center-flex;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    i {
+                        color: $flatFFF;
+                    }
+                }
+            }
+        }
+    }
+}

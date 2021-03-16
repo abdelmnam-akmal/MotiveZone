@@ -1,0 +1,9 @@
+body {
+    .special-header {
+        @extend %f-bold;
+        font-size: 40px;
+        color: $flatblue;
+        display: block;
+        @extend %text-capital;
+    }
+}

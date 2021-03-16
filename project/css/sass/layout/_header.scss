@@ -1,0 +1,61 @@
+.header {
+    background: url('../images/header.png') no-repeat center center;
+    @extend %bg-cover;
+    min-height: 920px;
+    padding-top: 183px;
+    margin-bottom: 96px;
+    .header-content {
+        @extend %center-flex;
+        color: $flatFFF;
+        > div {
+            padding-right: 40px;
+            margin-top: 65px;
+            h1 {
+                font-size: 50px;
+                @extend %text-capital;
+                line-height: 70px;
+                @extend %f-bold;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 26px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+    .header-image {
+        > div {
+            padding-right: 57.3px;
+            position: relative;
+            background: url('../images/Rectangle.png') no-repeat 85% 90%;
+            img {
+                position: relative;
+                z-index: 2;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -21px;
+                width: 43px;
+                height: 43px;
+                border-radius: 5px;
+                border: 3px solid $defaultBtnColor;
+                z-index: 1;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: 60px;
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                border: 3px solid $defaultBtnColor;
+                z-index: 1;
+            }
+        }
+    }
+}

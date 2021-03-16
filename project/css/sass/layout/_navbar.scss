@@ -1,0 +1,39 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding-top: 30px;
+    transition: .4s ease-out;
+    &.hide-navbar {
+        top: -100px;
+    }
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                @extend %text-capital;
+                font-size: 15px;
+                padding-right: 21px;
+                padding-left: 20px;
+                color: $flatFFF;
+            }
+        }
+    }
+    .header-btn {
+        font-size: 15px;
+        width: 104px;
+        height: 45px;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: $defaultBtnColor;
+        @extend %text-capital;
+        border-radius: 5px;
+        color: $flatFFF;
+    }
+}

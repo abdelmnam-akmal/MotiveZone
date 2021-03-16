@@ -1,0 +1,119 @@
+.footer {
+    padding-top: 80px;
+    background: url('../images/footer.png') no-repeat center center;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $flatblue3;
+        opacity: 99%;
+    }
+    .footer-cont {
+        color: $flatFFF;
+        .footer-image {
+            margin-bottom: 17px;
+            span {
+                font-size: 32px;
+                @extend %f-bold;
+            }
+        }
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            color: $flatblue4;
+        }
+        b {
+            margin-top: 35px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        form {
+            input {
+                margin: 0;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                padding: 12px 15px;
+            }
+            input[type="text"] {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 60%;
+            }
+            input[type="submit"] {
+                border-radius: 0 5px 5px 0;
+                margin-left: -5px;
+                background-color: $flatblue2;
+                color: $flatFFF;
+            }
+        }
+        h4 {
+            margin-bottom: 27px;
+            font-size: 18px;
+        }
+        ul {
+            li {
+                margin-bottom: 17px;
+                color: $flatblue4;
+            }
+        }
+        hr {
+            color: $flatblue4;
+        }
+    }
+    .bottom-footer {
+        padding-top: 110px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $flatblue4;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            margin-left: -50%;
+            width: 100%;
+            height: 2px;
+            background-color: $flatFFF;
+            opacity: 11%;
+        }
+        .list-footer {
+            li {
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+        .icons-footer {
+            i {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+                border-radius: 50%;
+                background-color: $flatblue4;
+                text-align: center;
+                line-height: 40px;
+                color: $flatFFF;
+                &:first-of-type {
+                    background-color: $facebook;
+                }
+                &:nth-of-type(2) {
+                    background-color: $twitter;
+                }
+                &:last-of-type {
+                    background-color: $youtube;
+                }
+            }
+        }
+        .copy {
+            span {
+                color: $defaultBtnColor;
+            }
+        }
+    }
+}

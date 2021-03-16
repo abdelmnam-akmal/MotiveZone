@@ -1,0 +1,22 @@
+// helpers in the style
+@import "sass/helpers/var"; // Variables
+@import "sass/helpers/extends"; // Extends
+@import "sass/helpers/mixins"; // Mixins
+
+@import "sass/helpers/global";
+
+// components
+@import "sass/components/buttons";
+
+// Layout of page 
+@import "sass/layout/navbar"; // Navbar
+@import "sass/layout/header"; // Header
+
+// Sections in the page
+@import "sass/sections/ourServices"; // Our-Services
+@import "sass/sections/aboutUs"; // About-Us
+@import "sass/sections/workUs"; // Work-With-Us
+@import "sass/sections/testi"; // Testi
+
+// layout of page
+@import "sass/layout/footer"; // section above footer

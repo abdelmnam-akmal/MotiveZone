@@ -1,0 +1,54 @@
+.testi {
+    margin-bottom: 134px;
+    .testi-image {
+        > div {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -22px;
+                left: 6px;
+                width: 94px;
+                height: 94px;
+                background: url('../images/group-image.png') no-repeat;
+                z-index: -1;
+            }
+        }
+    }
+    .testi-cont {
+        display: flex;
+        align-items: center;
+        > div {
+            h5 {
+                margin-bottom: 12px;
+                font-size: 20px;
+                font-weight: normal;
+                color: $flatblue;
+            }
+            span {
+                margin-bottom: 29.5px;
+            }
+            q {
+                font-size: 17px;
+                line-height: 30px;
+                color: $flatblue;
+                margin-bottom: 30.5px;
+                display: block;
+            }
+            .btns-testi {
+                button {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    margin-right: 30px;
+                    background-color: transparent;
+                    border: 3px solid $flatblue;
+                    color: $defaultBtnColor;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

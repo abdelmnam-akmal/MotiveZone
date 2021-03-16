@@ -1,0 +1,63 @@
+// Mixin Media Querie
+// extra Mobile 
+@mixin maxExtraMobile {
+    @media #{$maxExtraMobile} {
+        @content;
+    }
+}
+@mixin minMobile {
+    @media #{$minMobile} {
+        @content;
+    }
+}
+
+// mobile Media
+@mixin maxMobile {
+    @media #{$maxMobile} {
+        @content;
+    }
+}
+
+// small screen Media min and max
+@mixin minSmall {
+    @media #{$minSmall} {
+        @content;
+    }
+}
+@mixin maxSmall {
+    @media #{$maxSmall} {
+        @content;
+    }
+}
+
+// Medium screen media min and max
+@mixin minMedium {
+    @media #{$minMedium} {
+        @content;
+    }
+}
+@mixin maxMedium {
+    @media #{$maxMedium} {
+        @content;
+    }
+}
+
+// large screen media
+@mixin minLarge {
+    @media #{$minLarge} {
+        @content;
+    }
+}
+
+// in Small
+@mixin small {
+    @media #{$minSmall} and #{$maxSmall} {
+        @content;
+    }
+}
+// in Medium 
+@mixin medium {
+    @media #{$minMedium} and #{$maxMedium} {
+        @content;
+    }
+}

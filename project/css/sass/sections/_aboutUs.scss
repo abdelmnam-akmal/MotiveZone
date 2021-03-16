@@ -1,0 +1,29 @@
+.about-us {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    margin-bottom: 120px;
+    background: url('../images/about-us.png') no-repeat center center;
+    .about-cont {
+        @extend %center-flex;
+        > div {
+            span.special-header {
+                margin-bottom: 29.5px;
+            }
+            p:first-of-type {
+                margin-bottom: 30px;
+                font-size: 15px;
+                line-height: 26px;
+            }
+            p:last-of-type {
+                margin-bottom: 55.5px;
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+    }
+    .about-image {
+        > div {
+            margin-right: 50.9px;
+        }
+    }
+}
