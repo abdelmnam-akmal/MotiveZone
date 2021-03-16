@@ -13,6 +13,16 @@
     }
     .footer-cont {
         color: $flatFFF;
+        &:first-of-type {
+            @include maxSmall {
+                margin-bottom: 40px;
+            }
+        }
+        &:nth-of-type(2) {
+            @include maxSmall {
+                margin-bottom: 40px;
+            }
+        }
         .footer-image {
             margin-bottom: 17px;
             span {
@@ -72,6 +82,9 @@
         justify-content: space-between;
         color: $flatblue4;
         position: relative;
+        @include maxMobile {
+            flex-wrap: wrap;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -90,6 +103,10 @@
             }
         }
         .icons-footer {
+            @include maxMobile {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
             i {
                 width: 40px;
                 height: 40px;

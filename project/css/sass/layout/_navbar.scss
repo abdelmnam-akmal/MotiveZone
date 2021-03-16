@@ -6,12 +6,23 @@
     background: transparent;
     padding-top: 30px;
     transition: .4s ease-out;
+    z-index: 999999;
+    @include maxMobile {
+        background-color: $flatblue3;
+        padding-top: 10px;
+    }
     &.hide-navbar {
-        top: -100px;
+        top: -120px;
     }
     .navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
+        @media (max-width: 299px) {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
     }
     .navbar-nav {
         .nav-item {

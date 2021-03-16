@@ -4,6 +4,10 @@
     min-height: 920px;
     padding-top: 183px;
     margin-bottom: 96px;
+    @include maxSmall {
+        height: 100vh;
+        padding-top: 80px;
+    }
     .header-content {
         @extend %center-flex;
         color: $flatFFF;
@@ -16,6 +20,10 @@
                 line-height: 70px;
                 @extend %f-bold;
                 margin-bottom: 25px;
+                @include maxExtraMobile {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
             }
             p {
                 font-size: 15px;
@@ -29,6 +37,9 @@
             padding-right: 57.3px;
             position: relative;
             background: url('../images/Rectangle.png') no-repeat 85% 90%;
+            @include maxSmall {
+                background: none;
+            }
             img {
                 position: relative;
                 z-index: 2;
@@ -55,6 +66,9 @@
                 border-radius: 50%;
                 border: 3px solid $defaultBtnColor;
                 z-index: 1;
+                @include maxSmall {
+                    display: none;
+                }
             }
         }
     }

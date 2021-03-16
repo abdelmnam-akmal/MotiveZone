@@ -12,10 +12,23 @@
     }
     .services-content {
         display: flex;
+        @include maxSmall {
+            flex-wrap: wrap;
+        }
         > div {
             margin-left: 72px;
+            @include maxSmall {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            @include maxMobile {
+                margin-left: 0;
+            }
             &:first-of-type {
                 margin-left: 70px;
+                @include maxMobile {
+                    margin-left: 0;
+                }
             }
             .icon-cont {
                 width: 85px;
@@ -24,6 +37,9 @@
                 border-radius: 50%;
                 @extend %center-flex;
                 margin-bottom: 18px;
+                @include maxSmall {
+                    margin: 0 auto 18px;
+                }
             }
             h4 {
                 font-size: 20px;

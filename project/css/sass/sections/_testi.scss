@@ -1,6 +1,9 @@
 .testi {
     margin-bottom: 134px;
     .testi-image {
+        @include maxSmall {
+            margin-bottom: 50px;
+        }
         > div {
             position: relative;
             &:after {
@@ -12,6 +15,14 @@
                 height: 94px;
                 background: url('../images/group-image.png') no-repeat;
                 z-index: -1;
+                @include small {
+                    display: none;
+                }
+            }
+            img {
+                @include small {
+                    margin: auto;
+                }
             }
         }
     }

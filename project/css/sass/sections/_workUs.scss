@@ -2,8 +2,15 @@
     margin-bottom: 114px;
     .work-image {
         margin-right: 185px;
+        @include maxSmall {
+            margin-bottom: 50px;
+            margin: 0 auto 50px;
+        }
         > div {
             margin-left: 88px;
+            @include maxSmall {
+                margin: auto;
+            }
         }
     }
     .work-cont {
@@ -29,6 +36,9 @@
                 border: 2px solid $flatFFF;
                 padding: 5px;
                 position: relative;
+                @include maxMedium {
+                    width: 100% !important;
+                }
                 .select2-selection {
                     border: none;
                     .select2-search__field {

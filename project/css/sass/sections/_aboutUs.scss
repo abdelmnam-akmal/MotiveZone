@@ -22,8 +22,14 @@
         }
     }
     .about-image {
+        @include maxSmall {
+            margin-top: 50px;
+        }
         > div {
             margin-right: 50.9px;
+            @include maxSmall {
+                margin: auto;
+            }
         }
     }
 }
